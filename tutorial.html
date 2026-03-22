@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Getting started tutorial — step-by-step guide with tips, warnings, and best practices.">
+  <title>Öğretici — Genel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="tutorial.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+</head>
+
+<body>
+
+  <article class="tutorial-container" role="main">
+
+    <!-- ====== Page Title ====== -->
+    <header class="tutorial-header">
+      <h1 id="tutorial-title">Genel Bilgiler</h1>
+      <p class="tutorial-subtitle">Sorunlar ve kurulum hakkında genel bilgiler.</p>
+    </header>
+
+    <!-- ====== Section 1 ====== -->
+    <section class="tutorial-section" id="section-prerequisites">
+      <h2>1 &mdash; Kurulum</h2>
+      <p>Başlamadan önce internetinizin kapalı olduğundan emin olun!</p>
+      <ul class="tutorial-list">
+        <li>Ana siteden oyunun eski versiyonunu indirip kurun. Ardından istediğiniz user zip dosyasını indirin.</li>
+        <li>Oyun kurulduktan sonra oyunu açıp EULA'yı kabul ettikten sonra kapatabilirsiniz.</li>
+        <li>Dosya yöneticinizi açın ve indirdiğiniz user zip dosyasının içine gelip, <code>users.xml</code>dosyasını kopyalayın.</li>
+        <li>Kopyaladığınız bu dosyayı şu dizine gidip yapıştırın: <code>Android/data/com.nekki.shadowfight/files/userdata</code> yapıştırdıktan sonra içine girip editlemekte özgürsünüz.</li>
+        <li>Artık oyunu tekrar açabilirsiniz sizden güncel yapmanızı isteyecek, tamama basıp Play Stora'a devam edin. Artık internetinizi açıp güncellemeyi yapabilirsiniz.</li>
+      </ul>
+
+      <!-- Note Box -->
+      <div class="alert alert-tip" role="note">
+        <div class="alert-header">
+          <svg class="alert-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>
+          <span>Bilgi</span>
+        </div>
+        <p>Genel dosya yöneticisi olarak <code>Z Archiver</code> veya <code>MT Manager</code> kullanabilirsiniz.</p>
+      </div>
+    </section>
+
+    <!-- ====== Section 2 ====== -->
+    <section class="tutorial-section" id="section-installation">
+      <h2>2 &mdash; Alternatif Kurulum</h2>
+      <p>İlk 4 adım yine aynı olacak şekilde:</p>
+      <ul class="tutorial-list">
+        <li>Eğerki günceli almazsanız sadece bir hata alırsanız ilk olarak oyunu kapatın.</li>
+        <li>Dosya yöneticinizden şu dizine gidin: <code>Android/data/com.nekki.shadowfight/files/userdata</code> bu dizinde <code>users.xml.hash</code> dosyasını silin.</li>
+        <li>Hemen altındaki <code>users_backup.xml.hash</code> dosyasının adını <code>users.xml.hash</code> olarak değiştirin.</li>
+        <li>Artık oyunu açtığınızda hata almayacaksınız. Bu durumda isterseniz direk interneti açıp girin veya Play Store'a girip oyunu manuel olarak güncelleyin.</li>
+      </ul>
+    </section>
+
+    <!-- ====== Section 3 ====== -->
+    <section class="tutorial-section" id="section-configuration">
+      <h2>3 &mdash; Genel Problemler</h2>
+      <p>Videolara yorum yaparak buraya daha fazla bilgi eklenmesini sağlayabilirsiniz.</p>
+
+      <h3>3.1 &mdash; Mimari/Teknik Sorunlar (INSTALL_FAILED_NO_MATCHING_ABIS)</h3>
+      <p>Bu durum telefonunuzun işlemcisi ile alakalıdır. Eğerki telefonunuz çok yeni ise 32 bit mimariyi veya eskimiş 64 bit mimarileri desteklemiyor olabilir.</p>
+      <p>Bu durumu çözmenin tek yolu daha yeni bir APK yüklemektir.</p>
+
+      <!-- Important Box -->
+      <div class="alert alert-important" role="note">
+        <div class="alert-header">
+          <svg class="alert-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>
+          <span>Önemli</span>
+        </div>
+        <p>Her ne kadar daha yeni bir APK bu durumu çözse de hilenin çalışmaması söz konusudur.</p>
+      </div>
+
+      <h3>3.2 &mdash; Oyuna Girince Hemen Güncel Sorunu</h3>
+      <p>Eğer ki oyuna girerken internetinizi açık unuttuysanız ve güncel gelip duruyorsa:</p>
+      <ul class="tutorial-section">
+        <li>Dosya yöneticinizi açın.</li>
+        <li>Şu dizine gidin: <code>Android/data/com.nekki.shadowfight/files/gamedata</code></li>
+        <li>Burada 2 dosya göreceksiniz <code>config_cdn.xml</code> ve <code>config_cdn.xml.hash</code> bu 2 dosyayı da silin.</li>
+        <li>İnternetinizi kapatıp devam edebilirsiniz.</li>
+      </ul>
+    </section>
+
+    <!-- ====== Section 4 ====== -->
+    <section class="tutorial-section" id="section-running">
+      <h2>4 &mdash; Android Problemleri </h2>
+      <p>Videolara yorum yaparak buraya daha fazla bilgi eklenmesini sağlayabilirsiniz.</p>
+
+      <!-- Warning Box -->
+      <div class="alert alert-warning" role="alert">
+        <div class="alert-header">
+          <svg class="alert-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>
+          <span>Uyarı</span>
+        </div>
+        <p>Bu problemler hem Android versiyonunuza hemde telefon markanıza bağlıdır!</p>
+      </div>
+
+      <h3>4.1 &mdash; İzin Problemi</h3>
+      <p>Yüksek Android versiyonlarında <code>Android/data</code> klasörüne erişim kısıtlıdır. Bu durumu aşmak için <a href="https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api">Shizuku</a> kullanabilirsiniz.</p>
+
+      <h3>4.2 &mdash; APK Yüklenmiyor Problemi</h3>
+      <p>Dosya yöneticiniz/APK yükleyiciniz olarak <a href="https://www.apkmirror.com/apk/lin-jin-bin/mt-manager/">MT Manager</a> kullanmayı deneyebilirsiniz.</p>
+    </section>
+
+    <!-- ====== Section 5 ====== -->
+    <section class="tutorial-section" id="section-deployment">
+      <h2>5 &mdash; Geliştirme ve Daha Fazla Problem</h2>
+      <p>Daha fazla probleminiz varsa videonun yorumlar kısmında belirtin. Yorumunuzun en başına <code>Problem:</code> ekleyin ki bulmamız daha kolay olsun.</p>
+
+      <!-- Caution Box 
+      <div class="alert alert-caution" role="alert">
+        <div class="alert-header">
+          <svg class="alert-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>
+          <span>Caution</span>
+        </div>
+        <p>Never commit your <code>.env</code> file to version control — it contains <strong>secrets</strong> and API keys that must remain private.</p>
+      </div> -->
+
+    <!-- ====== Footer ====== -->
+    <footer class="tutorial-footer">
+      <p><a href="index.html">← Geri Dön</a></p>
+    </footer>
+
+  </article>
+
+</body>
+
+</html>
